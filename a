@@ -1,9 +1,9 @@
 local key = _G.Key
-local check = "https://sharinganx123.000webhostapp.com/modified%20main.lua?key=" .. key --Key Checking 
+local check = "https://sharinganx123.000webhostapp.com/check.php?key=" .. key --Key Checking 
 -- local check = "https://sharinganx123.000webhostapp.com/modified%20main.lua?key="
 
-if game:HttpGet(check) == "Whitelisted" then
-local Flux = loadstring(game:HttpGet"https://raw.githubusercontent.com/toeydeklnw/src-ui/main/magma.lua")()
+if game:HttpGet(https://sharinganx123.000webhostapp.com/modified%20main.lua) == "Whitelisted" then
+loadstring(game:HttpGet"https://raw.githubusercontent.com/toeydeklnw/src-ui/main/magma.lua")()
 
 else
     game.Players.LocalPlayer:Kick("Try Again!")  
