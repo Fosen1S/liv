@@ -1,0 +1,60 @@
+This documentation will guide you on how to make a good library!
+The main variable you will be using is called "Flux".
+
+Functions:
+Flux: {
+	Window(<string> title, <string> bottomtext, <color3> accentcolor, <enum.keycode> togglewindowkeycode)
+        Notification(<string> notificationdescription, <string> buttontext)
+        {
+                Line()
+                Label(<string> text)
+		Button(<string> title, <string> desc, <function> callback)
+                Toggle(<string> title, <string> desc,<bool> default, <function> callback) -- callback args: <bool> bool
+                Slider(<string> title, <string> desc,<value> min,<value> max,<value> default, <function> callback) -- callback args: <number> number selected
+                    {
+                        Change(<value> tochange)
+                    }
+                Dropdown(<string> title, <table> options)
+                    {
+                        Clear() --removes every option from dropdown
+                        Add(<string> title) --adds new option to dropdown
+                    }
+                Colorpicker(<string> title, <color3> presetcolor, <function> callback) -- callback args: <color3> color selected
+                Textbox(<string> title, <string> desc, <bool> disapper, <function> callback) -- callback args: <string> text typed in
+                Bind(<string> title, <enum.keycode> presetbind, <function> callback)
+                
+        } 
+}
+
+---
+Example:
+
+local win = Flux:Window("PREVIEW", "Baseplate", Color3.fromRGB(255, 110, 48), Enum.KeyCode.LeftControl)
+local tab = win:Tab("Tab 1", "http://www.roblox.com/asset/?id=6023426915")
+tab:Button("Kill all", "This function may not work sometimes and you can get banned.", function()
+	Flux:Notification("Killed all players successfully!", "Alright")
+end)
+tab:Label("This is just a label.")
+tab:Line()
+tab:Toggle("Auto-Farm Coins", "Automatically collects coins for you!", function(t)
+	print(t)
+end)
+tab:Slider("Walkspeed", "Makes your faster.", 0, 100,16,function(t)
+	print(t)
+end)
+tab:Dropdown("Part to aim at", {"Torso","Head","Penis"}, function(t)
+	print(t)
+end)
+tab:Colorpicker("ESP Color", Color3.fromRGB(255,1,1), function(t)
+	print(t)
+end)
+tab:Textbox("Gun Power", "This textbox changes your gun power, so you can kill everyone faster and easier.", true, function(t)
+	print(t)
+end)
+tab:Bind("Kill Bind", Enum.KeyCode.Q, function()
+	print("Killed a random person!")
+end)
+win:Tab("Tab 2", "http://www.roblox.com/asset/?id=6022668888")
+
+
+Documentation inspired by Elerium Library v2 Documentation.
