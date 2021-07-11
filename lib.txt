@@ -1,3 +1,6 @@
+if game.CoreGui:FindFirstChild("Library") then
+    game.CoreGui:FindFirstChild("Library"):Destroy()
+  end
 local VLib = {RainbowColorValue = 0, HueSelectionPosition = 0}
 local PresetColor = Color3.fromRGB(66, 134, 255)
 local UserInputService = game:GetService("UserInputService")
@@ -6,11 +9,6 @@ local RunService = game:GetService("RunService")
 local LocalPlayer = game:GetService("Players").LocalPlayer
 local Mouse = LocalPlayer:GetMouse()
 local CloseBind = Enum.KeyCode.RightControl
-
-local VLibLib = Instance.new("ScreenGui")
-VLibLib.Name = "VLibLib"
-VLibLib.Parent = game.CoreGui
-VLibLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 coroutine.wrap(
 	function()
