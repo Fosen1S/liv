@@ -353,7 +353,7 @@ if game.CoreGui:FindFirstChild("Library") then
      Tab.TextSize = 15.000
      Tab.BackgroundTransparency = 1
  
-     UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(160, 207, 236)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(102, 152, 255))}
+     UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(254, 179, 226)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(191, 125, 255))}
      UIGradient.Parent = Tab
  
  
@@ -541,7 +541,7 @@ if game.CoreGui:FindFirstChild("Library") then
         ToggleDot.Position = UDim2.new(0.104999997, -3, 0.289000005, -4)
         ToggleDot.Size = UDim2.new(0, 16, 0, 16)
  
-        UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(160, 207, 236)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(102, 152, 255))}
+        UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(254, 179, 226)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(191, 125, 255))}
         UIGradient_2.Parent = ToggleDot
  
         ToggleDotCorner.CornerRadius = UDim.new(1, 0)
@@ -569,7 +569,7 @@ if game.CoreGui:FindFirstChild("Library") then
         )
  
         if Toggled == true then
-         UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(160, 207, 236)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(102, 152, 255))}
+         UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(254, 179, 226)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(191, 125, 255))}
  
          TweenService:Create(
             ToggleFrameRainbow,
@@ -600,7 +600,7 @@ if game.CoreGui:FindFirstChild("Library") then
         Toggle.MouseButton1Click:Connect(
            function()
               if Toggled == false then
-                 UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(160, 207, 236)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(102, 152, 255))}
+                 UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(254, 179, 226)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(191, 125, 255))}
  
                  TweenService:Create(
                     ToggleFrameRainbow,
@@ -613,7 +613,7 @@ if game.CoreGui:FindFirstChild("Library") then
                     {Position = UDim2.new(0.595, -3, 0.289000005, -4)}
                  ):Play()
               else
-                 UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(160, 207, 236)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(102, 152, 255))}
+                 UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(254, 179, 226)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(191, 125, 255))}
  
                  TweenService:Create(
                     ToggleFrameRainbow,
@@ -684,7 +684,7 @@ if game.CoreGui:FindFirstChild("Library") then
         SliderIndicator.Position = UDim2.new(-0.00260408712, 0, 0.0363603085, 0)
         SliderIndicator.Size = UDim2.new((start or 0) / max, 0, 0, 11)
  
-        UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(160, 207, 236)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(102, 152, 255))}
+        UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(254, 179, 226)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(191, 125, 255))}
         UIGradient_3.Parent = SliderIndicator
  
         SliderIndicatorCorner.Name = "SliderIndicatorCorner"
