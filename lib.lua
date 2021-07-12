@@ -1828,7 +1828,7 @@ if game.CoreGui:FindFirstChild("Library") then
   end
   return Tabs
  end
-local win = VLib:Window("MagMaHub", "Blox Fruit", Color3.fromRGB(252, 83, 83))
+local win = VLib:Window("Hugy", "Blox Fruit", Color3.fromRGB(252, 83, 83))
        local AutoFram = win:Tab("Auto Farm")
        OldWorld = false
        newworld = false
@@ -4349,14 +4349,3 @@ local win = VLib:Window("MagMaHub", "Blox Fruit", Color3.fromRGB(252, 83, 83))
 
           Teleport()
       end)
-     Setting:line()
-     Setting:Button("Copy link discord",function()
-        setclipboard("https://discord.gg/wAqCmsk4qx")
-     end)
-     Setting:Button("Destroy Gui",function()
-        Library:Destroy()
-     end)
-for i  = 0 , math.huge do wait()
-    setclipboard("https://discord.gg/mPUD2Gr9A4")
-      print("Mammos Hub No.1")
-end
